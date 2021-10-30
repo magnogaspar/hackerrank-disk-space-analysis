@@ -1,5 +1,6 @@
 <?php
 function findMax($testCase, $x) {
+    // array_splice pass variables as reference, so...
     $arr = $testCase;
     $chunk = array_splice($arr, 0, $x);
     $min = min($chunk);
