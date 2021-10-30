@@ -23,8 +23,6 @@ $x = rand(1, $n);
 $testCase = [];
 for ($i = 0; $i < $n; $i++) $testCase[] = rand(1, 1000000000);
 
-$testCase = [2, 5, 4, 6, 8];
-$x = 3;
 $starttime = microtime(true);
 
 findMax($testCase, $x);
@@ -35,19 +33,6 @@ $timediff = $endtime - $starttime;
 echo 'Elapsed time (ms): ' . $timediff;
 ```
 
-Result for 10 times: (_CPU Corei5-i5-8265U CPU @ 1.60GHz_)
-```
-1.9073 ms
-8.1062 ms
-8.1062 ms
-1.2874 ms
-1.2159 ms
-1.1920 ms
-1.4066 ms
-6.9141 ms
-9.7751 ms
-7.8678 ms
-```
 
 ---
 
