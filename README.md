@@ -18,7 +18,7 @@ The chunks would be:
 ## Test
 
 ```
-$n = 1000000;
+$n = 100000;
 $x = rand(1, $n);
 $testCase = [];
 for ($i = 0; $i < $n; $i++) $testCase[] = rand(1, 1000000000);
@@ -33,6 +33,19 @@ $timediff = $endtime - $starttime;
 echo 'Elapsed time (ms): ' . $timediff;
 ```
 
+Result for 10 times: (_CPU Corei5-i5-8265U CPU @ 1.60GHz_)
+```
+24.0494 ms
+8.2966 ms
+3.8909 ms
+22.5330 ms
+8.9014 ms
+3.4777 ms
+18.6163 ms
+25.2535 ms
+14.2562 ms
+24.7417 ms
+```
 
 ---
 
